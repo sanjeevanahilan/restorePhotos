@@ -5,18 +5,18 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
-import { Testimonials } from "../components/Testimonials";
+// import { Testimonials } from "../components/Testimonials";
 
 const Home: NextPage = () => {
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Face Photo Restorer</title>
+        <title>Solve Intelligence</title>
       </Head>
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-28 mt-20">
-        <a
+        {/* <a
           href="https://twitter.com/nutlope/status/1615597965787435015"
           target="_blank"
           rel="noreferrer"
@@ -24,20 +24,22 @@ const Home: NextPage = () => {
         >
           Used by over <span className="font-semibold">55,000</span> happy
           customers
-        </a>
-        <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
-          Restoring old photos{" "}
-          <span className="relative whitespace-nowrap text-[#3290EE]">
-            <SquigglyLines />
-            <span className="relative">using AI</span>
-          </span>{" "}
-          for everyone.
+        </a> */}
+        <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-200 sm:text-7xl">
+          
+        <span className="relative whitespace-nowrap text-[#8128e0]">
+          Solve Intelligence.{" "}
+          </span>
+          <div className="relative whitespace-nowrap text-[#3290EE]">
+            {/* <SquigglyLines /> */}
+            <span className="relative text-2xl">Use that to get acquired by Google</span>
+          </div>{" "}
         </h1>
 
-        <p className="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">
+        {/* <p className="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">
           Have old and blurry face photos? Let our AI restore them so those
           memories can live on. 100% free – restore your photos today.
-        </p>
+        </p> */}
         <Link
           className="bg-black rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-black/80"
           href="/restore"
@@ -51,7 +53,7 @@ const Home: NextPage = () => {
                 <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
                 <Image
                   alt="Original photo of my bro"
-                  src="/michael.jpg"
+                  src="/helmholtz.jpg"
                   className="w-96 h-96 rounded-2xl"
                   width={400}
                   height={400}
@@ -63,7 +65,7 @@ const Home: NextPage = () => {
                   alt="Restored photo of my bro"
                   width={400}
                   height={400}
-                  src="/michael-new.jpg"
+                  src="/helmholtz_restored.jpg"
                   className="w-96 h-96 rounded-2xl sm:mt-0 mt-2"
                 />
               </div>
@@ -71,7 +73,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </div>
   );
